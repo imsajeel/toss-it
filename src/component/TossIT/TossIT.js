@@ -2,11 +2,13 @@ import React from "react";
 import TossITimage from "./Heads-1.png";
 import "./TossIT.css";
 
-const TossIT = () => {
+const TossIT = (onClickToss) => {
   return (
     <div className="TossIT">
       <img src={TossITimage}></img>
-      <button className="btRed">Toss !</button>
+      <button onClick={onClickToss.onClickToss} className="btRed">
+        Toss !
+      </button>
     </div>
   );
 };

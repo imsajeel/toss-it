@@ -2,7 +2,7 @@ import React from "react";
 import HeadsImage from "./Heads-2.png";
 import TailsImage from "./Heads-3.png";
 
-const Logic = () => {
+const Logic = (onLogic) => {
   let result = 1;
 
   let coin;
@@ -16,9 +16,12 @@ const Logic = () => {
 
   return (
     <div>
+      {console.log(onLogic.onLogic)}
       {coin}
       <div>
-        <button className="btRed">Retry</button>
+        <button id="btRetry" className="btRed">
+          Retry
+        </button>
       </div>
     </div>
   );
