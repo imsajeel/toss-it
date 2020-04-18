@@ -1,5 +1,13 @@
 .App {
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: rgba(0, 37, 73, 1);
+  color: white;
 }
 
 .App-logo {
@@ -35,4 +43,28 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.btRed {
+  margin-top: 40px;
+  width: 120px;
+  height: 45px;
+  background-color: red;
+  color: white;
+  border: 0px;
+  border-radius: 25px;
+  font-size: 20px;
+  font-family: "Lato", sans-serif;
+  font-weight: 900;
+  cursor: pointer;
+}
+.btRed:hover {
+  background-color: rgb(255, 66, 66);
+}
+.btRed:disabled {
+  background-color: grey;
+  color: rgba(0, 37, 73, 1);
+}
+.btRed:focus {
+  outline: 0;
 }
